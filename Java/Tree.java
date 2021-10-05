@@ -1,6 +1,6 @@
 public class Tree {
     double heightFT;
-    double trunkDm;
+    double heighttrunkDm;
     TreeType treeType;
 
     Tree(double heightFT, double trunkDm, TreeType treeType){
