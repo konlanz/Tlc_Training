@@ -21,4 +21,11 @@ public class Bank {
         return 0;
 
     }
+    public double withdrawBalance(double amt) {
+        if(amt <= this.balance){
+            this.balance = this.balance - amt;
+            return amt;
+        }
+        return 0;
+    }
 }
