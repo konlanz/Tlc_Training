@@ -1,5 +1,4 @@
-import Employee.Emoployee;
-
+package Employee;
 public class classrun {
     public static void main(String[] args) {
         System.out.println("this is a Java class of emplyee");
