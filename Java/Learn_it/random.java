@@ -1,4 +1,5 @@
 package Learn_it;
+import java.util.Arrays;
 import  java.util.Random;
 
 public class random {
@@ -9,11 +10,11 @@ public class random {
         int count =0;
         while (count < arr.length){
             Random r = new Random();
-            arr[count]= r.nextInt();
+            arr[count]= r.nextInt(50);
             count++;
         }
-
-        System.out.println(arr.length);
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
     
