@@ -1,4 +1,6 @@
-package Labs.project.Labs3;
+import org.junit.Test;
+import org.junit;
+
 public class TradeTest {
-    
+    @TestFactory
 }

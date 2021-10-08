@@ -1,3 +1,4 @@
+import org.junit.Test;
 
 public class Trade {
     private String id;
@@ -24,9 +25,9 @@ public class Trade {
     }else{
         System.out.println("This is not a valid price");
     }
-
-
 }
+
+
     public int  getQuantity() {
         return quantity;
     }
