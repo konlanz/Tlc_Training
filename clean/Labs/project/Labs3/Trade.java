@@ -1,5 +1,4 @@
 
-
 public class Trade {
     private String id;
     private String Symbol;
@@ -25,6 +24,8 @@ public class Trade {
     }else{
         System.out.println("This is not a valid price");
     }
+
+
 }
     public int  getQuantity() {
         return quantity;
