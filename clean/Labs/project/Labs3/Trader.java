@@ -1,4 +1,3 @@
-package Labs.project.Labs3;
 
 public class Trader {
     String name;
