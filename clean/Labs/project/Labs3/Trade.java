@@ -8,6 +8,7 @@ public class Trade {
     public static void main(String[] args) {
         
     }
+    public Trade(){};
     public Trade(String id, String Symbol, int quantity, double price){
         this.id = id;
         this.Symbol = Symbol;
