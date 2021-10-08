@@ -16,10 +16,16 @@ public class Trade {
         this.Symbol = Symbol;
         this.quantity = quantity;
     }
-    private double setPrice(double price){
+    public double setPrice(double price){
         if(price>=0){
         this.price = price;
     }else{
         System.out.println("This is not a valid price");
+    }
+    public int  getQuantity() {
+        return quantity;
+    }
+    public double getPrice() {
+        return price;
     }
 }
