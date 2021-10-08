@@ -1,0 +1,25 @@
+package Labs.project.Labs3;
+
+public class Trade {
+    private String id;
+    private String Symbol;
+    private int quantity;
+    private double price;
+    public Trade(String id, String Symbol, int quantity, double price){
+        this.id = id;
+        this.Symbol = Symbol;
+        this.quantity = quantity;
+        this.price = price;
+    }
+    public Trade(String id, String Symbol, int quantity){
+        this.id = id;
+        this.Symbol = Symbol;
+        this.quantity = quantity;
+    }
+    private double setPrice(double price){
+        if(price>=0){
+        this.price = price;
+    }else{
+        System.out.println("This is not a valid price");
+    }
+}
