@@ -3,6 +3,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.*;
 public class Main {
+    
     public static void main(String[] args) {
         System.out.println("Hello world");
         arrayTwo();
@@ -21,10 +22,30 @@ public class Main {
 
         }
          randArray = set.toArray(randArray);
-         Arrays.sort(randArray);
+         insertSortFunction(randArray);
+         //Arrays.sort(randArray);
         for (Integer i: randArray){
+            
             System.out.println(i);
         }
+        
+        
     
     }
+    //insert sort function
+    public static void insertSortFunction(Integer[] array){
+        int l = array.length;
+        for(int k =1; k < l; k++){
+            int key = array[k];
+            int i = k-1;
+            while ( (i > -1) && ( array [i] > key ) ) {  
+                array [i+1] = array [i];  
+                i--;  
+            }  
+            array[i+1] = key; 
+        }
+
+    }
+
+    
 }
