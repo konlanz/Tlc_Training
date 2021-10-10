@@ -1,6 +1,7 @@
 public class Account {
     private double TotalTrade;
-    public void setTotalTrade(double totalValue) {}{
+    public Account() {}
+    public void setTotalTrade(double totalValue){
         this.TotalTrade = totalValue;
     }
     public double GetTotalTrade(){
