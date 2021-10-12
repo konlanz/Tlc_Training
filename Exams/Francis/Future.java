@@ -1,5 +1,6 @@
 public class Future extends  Product{
     private String exchange, contractCode;
+    private final ProductServicePricing productPricingService;
     public String getExchange() {
         return exchange;
     }
@@ -34,13 +35,16 @@ public class Future extends  Product{
 
     private int month, year;
     
-    public Future(String id, String exchange, String contractCode, int month, int year) {
+    public Future(String id, String exchange, String contractCode, int month, int year, ProductPricingService productPricingService) {
         super(id);
         this.exchange = exchange;
         this.contractCode = contractCode;
         this.month = month;
         this.year = year;
+        this.productPricingService = productPricingService;
         
     }
+    @Override
+    public double getPrice() {return productPricingService.price(this.exchange, this.contractCode, this.month, this.year);}
 
 }
