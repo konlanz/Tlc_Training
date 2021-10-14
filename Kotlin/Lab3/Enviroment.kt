@@ -1,3 +1,4 @@
+package Lab3
 abstract class Environment(vararg ags : Actor) {
     val agents : List<Actor> = ags.toList()
  

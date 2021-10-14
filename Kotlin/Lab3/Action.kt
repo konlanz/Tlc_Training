@@ -1,6 +1,2 @@
-abstract class Action {
- class ForageAction() {
-
- }
- class HuntAction( val key: String ) { }
-}
+package Lab3
+abstract class Action { }

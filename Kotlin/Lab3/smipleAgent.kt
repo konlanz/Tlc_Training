@@ -1,4 +1,5 @@
-class RandomAgent(override val name: String, probability: Double) : Actor {
+
+class SimpleAgent(override val name: String) : Actor {
     override fun act(): Action {
         return ForageAction()
     }
@@ -6,8 +7,6 @@ class RandomAgent(override val name: String, probability: Double) : Actor {
     override fun perceive(vararg facts: Percept) {}
 
     override fun toString(): String {
-        return "RandomAgent(name='$name')"
+        return "SimpleAgent(name='$name')"
     }
-
-
 }
